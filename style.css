@@ -1,0 +1,529 @@
+/*
+Theme Name: YEBO | Bicycle theme
+Theme URI: http://mmmahira-tech.com
+Author: ENVALAB
+Author URI: https://moyej-tech.com
+Description: YEBO is minimal multi-purpose portfolio template suitable any agencies, portfolios, creative group, freelancers, artists, professionals and much more.
+Version: 1.0
+*/
+
+/* 
+CSS Indexing
+=> Default CSS
+=> Typography
+=> Header CSS
+	=>Menu CSS
+=> SLIDER CSS
+=> HOME VERSION CSS
+=> PORTFOLIO CSS
+=> STYLE CSS
+=> FEATURE CSS
+=> DOWNLOAD CSS
+=> FOOTER CSS
+=> SCROLL TO TOP CSS
+*/
+
+/*========================
+========== Default CSS =======
+========================*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+.content{
+	display: block;
+	width: 85%;
+	margin: auto;
+}
+/*========================
+========== Typography =======
+========================*/
+h2{
+	color: #353738;
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	line-height: 1.6em;
+	text-transform: uppercase;
+}
+h5{
+	color: #848789;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1em;
+	text-transform: capitalize;
+}
+p{
+	color: #848789;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2em;
+}
+/*========================
+========== Header CSS =======
+========================*/
+.header-area{
+	position: relative;
+	overflow: hidden;
+}
+.header-area .logo-area{
+	display: none;
+}
+.header-area .header-image{
+	width: 100%;
+	height: auto;
+}
+/*========================
+==========Menu CSS=======
+========================*/
+.header-area .main-menu{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 35px;
+}
+.main-menu img{
+	width: 88px;
+	height: 78px;
+}
+.main-menu ul li a{
+	display: block;
+	margin: 0 15px;
+	color: #4d4959;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	line-height: 1.4em;
+}
+.main-menu ul li a span{
+	margin-left: 40px;
+}
+/*========================
+==========Intro CSS=======
+========================*/
+.intro-area{
+	padding: 100px 0;
+	background: #F7F7F7;
+	overflow: hidden;
+}
+.intro-area img{
+	width: 46px;
+	height: 39px;
+}
+
+/*========================
+==========Description CSS=======
+========================*/
+.description-area{
+	overflow: hidden;
+}
+.description-area .big, 
+.description-area .small{
+	padding: 0;
+	overflow: hidden;
+}
+.big-small, 
+.small-big{
+	position: relative;
+	max-height: 473px;
+	overflow: hidden;
+}
+.logo-icon1{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -59px;
+}
+.logo-icon1 a img{
+	display: block;
+	width: 113px;
+	height: 118px;
+	margin: auto;
+}
+.logo-icon3{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -34px;
+	opacity: 0;
+	transition: all .5s linear;
+}
+.logo-icon3:hover{
+	opacity: 1;
+}
+.logo-icon3 a img{
+	display: block;
+	width: 208px;
+	height: 68x;
+	margin: auto;
+}
+.big img, 
+.small-image img{
+	width: 100%;
+	height: auto;
+}
+.small-image{
+	position: relative;
+}
+.small-image:before{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	content: '';
+	height: 0;
+	width: 0;
+	border-top: 10px solid #FFFFFF;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+.small-des{
+	padding: 60px 0 40px;
+}
+.small-des hr{
+	display: block;
+	width: 50px;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #cccccc;
+	margin: auto;
+	margin-top: 25px;
+
+}
+.section{
+	overflow: hidden;
+}
+.section .content p{
+	font-size: 14px;
+	line-height: 1.8em;
+}
+.big-small-big{
+	position: relative;
+	max-height: 473px;
+	overflow: hidden;
+}
+/*========================
+==========Tweet CSS=======
+========================*/
+.tweet-area{
+	overflow: hidden;
+	padding: 100px 0;
+}
+.tweet-area i{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 8px;
+	box-shadow: 0 0 1px rgba(0,0,0,0);
+	color: #51C5F2;
+	font-size: 30px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	transform: perspective(1px) translateZ(0);
+	transition: all .5s ease-out;
+	transition-property: transform;
+
+}
+.tweet-area i:hover{
+	color: #FFFFFF;
+	background: linear-gradient(#0b5c7b, #51C5F2);
+	border: 1px solid #046e97;
+	transform: scale(1.1);
+}
+.tweet-area span{
+	color: #c0b9b9;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: lowercase;
+}
+.tweet-area p{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 21px;
+}
+/*========================
+========== Portfolio CSS =======
+========================*/
+.portfolio-area{
+	max-height: 412px;
+	overflow: hidden;
+}
+.portfolio1, 
+.portfolio2, 
+.portfolio3, 
+.portfolio4, 
+.top-left, 
+.top-right, 
+.bottom, 
+.top, 
+.bottom-left, 
+.bottom-right{
+	padding: 0;
+	overflow: hidden;
+}
+.portfolio1 img, 
+.portfolio2 img, 
+.portfolio3 img, 
+.portfolio4 img{
+	width: 100%;
+	height: auto;
+}
+.top{
+	position: relative;
+	width: 100%;
+	height: 211px;
+	background: url('images/portfolio-6.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.hover{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 211px;
+	background-color: rgba(26, 188, 156,0.7);
+	opacity: 0;
+	transition: all .5s linear;
+}
+.top:hover .hover{
+	top: 0;
+	opacity: 1;
+}
+.portfolio-text{
+	display: block;
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	text-align: center;
+}
+.portfolio-text img{
+	width: 51px;
+	height: 31px;
+}
+.portfolio-text h4 a{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s linear;
+}
+/*========================
+========== Shop CSS =======
+========================*/
+.shop-area{
+	padding: 70px 0;
+	background-color: #282F35;
+	overflow: hidden;
+}
+.shop-area a{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 14px 50px;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0,0,0,0);
+	border: 1px solid #666666;
+	color: #F7F7F7;
+	background: #282F35;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	line-height: 1.3em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background .4s linear;
+	transition-property: transform;
+}
+.shop-area a:hover{
+	color: #282F35;
+	background: #F7F7F7;
+	transform: scale(0.9);
+}
+/*========================
+========== Subscribe CSS =======
+========================*/
+.subscribe-area{
+	overflow: hidden;
+	padding: 100px 0;
+}
+.subscribe-heading{
+	margin-bottom: 25px;
+}
+.subscribe-heading h2{
+	color: #848789;
+}
+.subscribe-area .email{
+	width: 75%;
+	padding: 30px 26px;
+	border-radius: 0;
+	margin-right: 4px;
+	font-size: 22px;
+}
+.subscribe{
+	padding: 15px 39px;
+	border: 1px solid transparent;
+	border-radius: 0;
+	background: #64C29E;
+	color: #C2D8CC;
+	font-size: 22px;
+	transition: all .5s linear;
+}
+.subscribe:hover{
+	border: 1px solid #64C29E;
+	color: #64C29E;
+	background: #fff;
+
+}
+/*========================
+========== Footer CSS =======
+========================*/
+.footer-area{
+	overflow: hidden;
+	padding: 60px 0;
+	background: #F7F7F7;
+}
+.footer-area p{
+	color: #adadad;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 13px;
+	line-height: 1.2em;
+	text-transform: capitalize;
+}
+.address{
+	width: 25%;
+	margin-left: 8.33%;
+}
+.social{
+	margin-top: 20px;
+}
+.social .fa-twitter{
+	display: table;
+	width: 15px;
+	height: 15px;
+	padding: 7px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	font-size: 15px;
+	color: #fff;
+	background: #7BC9EE;
+	transition: all .5s linear;
+}
+.social .fa-twitter:hover{
+	color: #7BC9EE;
+	background: #fff;
+	border: 1px solid #7BC9EE;
+	transform: scale(1.1);
+}
+.social .fa-facebook-f{
+	display: table;
+	width: 29px;
+	height: 29px;
+	padding: 7px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	font-size: 15px;
+	color: #fff;
+	background: #5A7AB9;
+	transition: all .5s linear;
+}
+.social .fa-facebook-f:hover{
+	color: #5A7AB9;
+	background: #fff;
+	border: 1px solid #5A7AB9;
+	transform: scale(1.1);
+}
+.social .fa-pinterest-p{
+	display: table;
+	width: 29px;
+	height: 29px;
+	padding: 7px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	font-size: 15px;
+	color: #fff;
+	background: #F14D56;
+	transition: all .5s linear;
+}
+.social .fa-pinterest-p:hover{
+	color: #F14D56;
+	background: #fff;
+	border: 1px solid #F14D56;	
+	transform: scale(1.1);
+}
+
+.copyright{
+	margin-top: 20px;
+}
+.copyright{
+	color: #adadad;
+	font-style: italic;
+	font-size: 13px;
+}
+
+
+/*========================
+========== Media Query =======
+========================*/
+@media all and (max-width: 768px){
+	.header-area .logo-area{
+		display: block;
+		position: absolute;
+		top: 15px;
+		left: 6%;
+	}
+	.header-area .main-menu{
+		padding-top: 5px;
+	}
+	.main-menu img{
+		display: none;
+	}
+	.main-menu span{
+		display: none;
+	}
+	.main-menu ul li{
+		display: block;
+		padding: 0;
+		margin: 15px 6% 15px 0;
+		text-align: right;
+	}
+	.big-small, 
+	.small-big, 
+	.big-small-big, 
+	.portfolio-area{
+		max-height: none;
+		height: auto;
+		width: 100%;
+	}
+	.subscribe-area .email{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.subscribe{
+		width: 100%;
+	}
+	.address{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+}
